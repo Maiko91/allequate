@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "picture": "static/images/product1.png",
+      "description": "Vintage Typewriter to post awesome stories about UI design and webdev.",
+      "price": "$49.50",
+      "subText": "Eligible for Shipping To Mars or somewhere else",
+      "raiting": "4"
+    },
+    {
+      "id": 2,
+      "picture": "static/images/product2.png",
+      "description": "Lee Pucker design. Leather botinki for handsome designers. Free shipping.",
+      "price": "$13.95",
+      "subText": "1258 bids, 359 watchers $5.95 for shipping",
+      "raiting": "3"
+    }
+  ]
+}
