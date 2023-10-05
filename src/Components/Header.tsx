@@ -132,8 +132,14 @@ function Header() {
               </Button>
             ))}
           </Box>
-          <Box sx={{ display: "flex", flexGrow: 0, justifyContent: "space-between" }}>
-            <Search sx={{margin: "10px"}}>
+          <Box
+            sx={{
+              display: "flex",
+              flexGrow: 0,
+              justifyContent: "space-between",
+            }}
+          >
+            <Search sx={{ margin: "10px" }}>
               <SearchIconWrapper>
                 <SearchIcon />
               </SearchIconWrapper>
@@ -144,7 +150,10 @@ function Header() {
             </Search>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src={`${process.env.PUBLIC_URL}/static/avatar/1.jpeg`}/>
+                <Avatar
+                  alt="Remy Sharp"
+                  src={`${process.env.PUBLIC_URL}/static/avatar/1.jpeg`}
+                />
               </IconButton>
             </Tooltip>
             <Menu

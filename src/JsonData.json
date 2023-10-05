@@ -2,19 +2,30 @@
   "products": [
     {
       "id": 1,
-      "picture": "static/images/product1.png",
-      "description": "Vintage Typewriter to post awesome stories about UI design and webdev.",
-      "price": "$49.50",
-      "subText": "Eligible for Shipping To Mars or somewhere else",
-      "raiting": "4"
+      "picture": "static/images/product1.jpg",
+      "description": "XFX Speedster SWFT309 AMD Radeon RX 6700 XT 12 GB GDDR6 HDMI 3xDP.",
+      "price": "363,00€",
+      "subText": "899 valoraciones",
+      "raiting": 4.6,
+      "link": "https://amzn.to/46B6pHH"
     },
     {
       "id": 2,
-      "picture": "static/images/product2.png",
-      "description": "Lee Pucker design. Leather botinki for handsome designers. Free shipping.",
-      "price": "$13.95",
-      "subText": "1258 bids, 359 watchers $5.95 for shipping",
-      "raiting": "3"
+      "picture": "static/images/product2.jpg",
+      "description": "Apple Smartphone iPhone 14 Plus Blanco 512GB 6,7 pulgadas 6GB RAM.",
+      "price": "2.438,17€",
+      "subText": "0 valoraciones",
+      "raiting": 0,
+      "link": "https://amzn.to/3PLDLwM"
+    },
+    {
+      "id": 3,
+      "picture": "static/images/product3.jpg",
+      "description": "Amazon Basics - Altavoces para ordenador alimentados por USB con sonido dinámico.",
+      "price": "15,85€",
+      "subText": "57.471 valoraciones",
+      "raiting": 4.4,
+      "link": "https://amzn.to/46AJaxh"
     }
   ]
 }
