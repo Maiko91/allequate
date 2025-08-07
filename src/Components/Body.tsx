@@ -5,12 +5,43 @@ import productServices from "../Services/produt";
 import { Box } from "@mui/material";
 
 const Body = () => {
-  const { data: allProducts, isFetching } = productServices.useGetAllProducts();
-
+  // const { data: allProducts, isFetching } = productServices.useGetAllProducts();
+const products = [
+  {
+    id: 1,
+    picture: "static/images/product1.jpg",
+    description:
+      "XFX Speedster SWFT309 AMD Radeon RX 6700 XT 12 GB GDDR6 HDMI 3xDP.",
+    price: "363,00€",
+    subText: "899 valoraciones",
+    raiting: 4.6,
+    link: "https://amzn.to/46B6pHH",
+  },
+  {
+    id: 2,
+    picture: "static/images/product2.jpg",
+    description:
+      "Apple Smartphone iPhone 14 Plus Blanco 512GB 6,7 pulgadas 6GB RAM.",
+    price: "2.438,17€",
+    subText: "0 valoraciones",
+    raiting: 0,
+    link: "https://amzn.to/3PLDLwM",
+  },
+  {
+    id: 3,
+    picture: "static/images/product3.jpg",
+    description:
+      "Amazon Basics - Altavoces para ordenador alimentados por USB con sonido dinámico.",
+    price: "15,85€",
+    subText: "57.471 valoraciones",
+    raiting: 4.4,
+    link: "https://amzn.to/46AJaxh",
+  },
+];
   return (
     <Box sx={{ display: "flex" }}>
-      {!isFetching &&
-        allProducts.map((product: CardType, index: number) => (
+      {
+        products.map((product: CardType, index: number) => (
           <Card
             key={product.id + index}
             id={product.id}
