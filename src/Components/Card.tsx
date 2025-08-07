@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { Button, CardMedia, Rating } from "@mui/material";
 import CardType from "../Types/CardType";
+import { displayValue } from "@tanstack/react-query-devtools/build/lib/utils";
 
 const Card: React.FC<CardType> = ({
   id,
@@ -24,17 +25,15 @@ const Card: React.FC<CardType> = ({
         />
         <Typography sx={descriptionStyle}>{description}</Typography>
         <Typography sx={priceStyle}>{price}</Typography>
-        <Typography sx={subTextStyle}>{subText}</Typography>
-        <Box
-          sx={{
-            "& > legend": { mt: 2 },
-          }}
-        >
-          <Rating
-            name="simple-controlled"
-            value={raiting}
-            onChange={(event, newValue) => {}}
-          />
+        <Box sx={ratingContainer}>
+          <Box>
+            <Typography sx={subTextStyle}>{subText}</Typography>
+            <Rating
+              name="simple-controlled"
+              value={raiting}
+              onChange={(event, newValue) => {}}
+            />
+          </Box>
           <Button variant="contained" href={link}>
             Go To Amazon
           </Button>
@@ -46,10 +45,12 @@ const Card: React.FC<CardType> = ({
 
 const containerStyle = {
   display: "flex",
+  flex: "1 1 110px",
   flexDirection: "column",
   justifyContent: "flex-end",
   alignItems: "center",
-  width: "259px",
+  maxWidth: "210px",
+  width: "210px",
   minWidth: "110px",
   margin: "20px",
   padding: "15px",
@@ -60,16 +61,21 @@ const containerStyle = {
 const imageStyle = {
   margin: "5px",
   maxWidth: "100%",
-  maxHeight: "100%",
+  maxHeight: "180px",
   height: "auto",
   width: "auto",
   alignSelf: "center",
+};
+const ratingContainer = {
+  display: "flex",
+  flexDirection: "column",
+  gap: "10px",
 };
 
 const descriptionStyle = {
   color: "#19191D",
   fontWeight: "500",
-  fontSize: "16px",
+  fontSize: "14px",
   lineHeight: "24px",
   letterSpacing: "2.5%",
   margin: "5px",
@@ -77,7 +83,7 @@ const descriptionStyle = {
 const priceStyle = {
   color: "#000000",
   fontWeight: "700",
-  fontSize: "24px",
+  fontSize: "20px",
   lineHeight: "36px",
   margin: "5px",
 };

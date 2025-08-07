@@ -39,7 +39,7 @@ const products = [
   },
 ];
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", flexWrap: "wrap" }}>
       {
         products.map((product: CardType, index: number) => (
           <Card
